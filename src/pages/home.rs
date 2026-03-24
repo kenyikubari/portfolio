@@ -1,13 +1,19 @@
 use leptos::prelude::*;
 use leptos_router::components::A;
 use crate::components::project_card::ProjectCard;
+use crate::components::skill_card::SkillCard;
 use crate::data::projects::get_projects;
+use crate::data::skills::get_skills;
+use crate::data::contact::get_contact;
 
 #[component]
 pub fn Home() -> impl IntoView {
     let projects = get_projects();
+    let skills = get_skills();
+    let contact = get_contact();
 
     view! {
+        
         <main class="home">
             // Hero
             <section class="hero">
@@ -27,35 +33,61 @@ pub fn Home() -> impl IntoView {
                         <span class="btn-secondary">"About Me"</span>
                     </A>
                 </div>
+                <div class="hero-socials">
+                    {contact.github.map(|url| view! {
+                        <a href=url target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    })}
+                    {contact.linkedin.map(|url| view! {
+                        <a href=url target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    })}
+                    {contact.research_gate.map(|url| view! {
+                        <a href=url target="_blank" class="social-link">
+                            <i class="fas fa-flask"></i>
+                        </a>
+                    })}
+                    {contact.youtube.map(|url| view! {
+                        <a href=url target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    })}
+                    {contact.instagram.map(|url| view! {
+                        <a href=url target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    })}
+                    {contact.tiktok.map(|url| view! {
+                        <a href=url target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    })}
+                </div>
             </section>
 
             // Skills
             <section class="skills-preview">
-                <h2>"Core Competencies"</h2>
+                <div class="projects-header">
+                    <p class="projects-eyebrow">"// skills we learned along the way;"</p>
+                    <h2 class="projects-heading">
+                        "Core"
+                        <span class="heading-accent">" Competencies"</span>
+                    </h2>
+                    <div class="projects-rule"></div>
+                </div>
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>"Mechanical Design"</h3>
-                        <p>"SolidWorks, GD&T, DFM, mechanism design, structural systems."</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>"Simulation & Analysis"</h3>
-                        <p>"FEA, CFD fundamentals, turbulence research, experimental validation."</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>"Computational Engineering"</h3>
-                        <p>"Rust, Python, data analysis, numerical methods, WASM systems."</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>"Manufacturing & Testing"</h3>
-                        <p>"Fabrication workflows, rapid prototyping, system validation."</p>
-                    </div>
+                    {skills.into_iter().map(|s| view! {
+                        <SkillCard skill=s />
+                    }).collect_view()}
                 </div>
             </section>
 
             // Featured Projects
             <section class="featured-projects">
                 <div class="projects-header">
-                    <p class="projects-eyebrow">"// featured work"</p>
+                    <p class="projects-eyebrow">"// featured work;"</p>
                     <h2 class="projects-heading">
                         "Selected"
                         <span class="heading-accent">" Projects"</span>
@@ -67,9 +99,10 @@ pub fn Home() -> impl IntoView {
                         <ProjectCard project=p />
                     }).collect_view()}
                 </div>
+                <br></br>
                 <div class="projects-cta">
                     <A href="/projects">
-                        <span class="btn-secondary">"View All Projects →"</span>
+                        <span class="btn-primary">"View All Projects →"</span>
                     </A>
                 </div>
             </section>

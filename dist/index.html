@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Portfolio</title>
     
 <script type="module">
-import init, * as bindings from '/portfolio/portfolio-3bca9e56972bb8d5.js';
-const wasm = await init({ module_or_path: '/portfolio/portfolio-3bca9e56972bb8d5_bg.wasm' });
+import init, * as bindings from '/portfolio/portfolio-a1d318cce369686a.js';
+const wasm = await init({ module_or_path: '/portfolio/portfolio-a1d318cce369686a_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -16,8 +17,8 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-    <link rel="stylesheet" href="/portfolio/styles-b08dcf71bc26575c.css" integrity="sha384-G3GIjaGqMvvlm6VLm0TtyppSQKm5XYqCgXUhQ93QAqhHHJPjW6YjHliUVElyWzkF"/>
-<link rel="modulepreload" href="/portfolio/portfolio-3bca9e56972bb8d5.js" crossorigin="anonymous" integrity="sha384-sY4R1TdmGxeOYj++9KQ1WXl/2E4VOfcOIBHQBkN70nkMAXfv/ZIWRehtWg+9D4K4"><link rel="preload" href="/portfolio/portfolio-3bca9e56972bb8d5_bg.wasm" crossorigin="anonymous" integrity="sha384-iGW50z4E0zIz+f5yQqThX/BLvGvGcHl2zulr4T9p/KnE8qxCl/nDDnTplYnB3qSA" as="fetch" type="application/wasm"></head>
+    <link rel="stylesheet" href="/portfolio/styles-adb6317a523af823.css" integrity="sha384-IRnUmiA5s6E6e+MfD78a6S1C8C5xp0g7ZnY9X6ApzlvDS4h6lWgfB9SymFqUUP4+"/>
+<link rel="modulepreload" href="/portfolio/portfolio-a1d318cce369686a.js" crossorigin="anonymous" integrity="sha384-6V3EwUIMpNDYmkXe/EaoRDvUEcgaMNi/tR64fY1kMabJ4Dc3n8DriQ1F4V8J5drz"><link rel="preload" href="/portfolio/portfolio-a1d318cce369686a_bg.wasm" crossorigin="anonymous" integrity="sha384-txtXqJC7VQ08p/E3b7xvc7bbrSzUvdnYzN00TpGj94H7EkyCLOYll+rsV4GISP5v" as="fetch" type="application/wasm"></head>
 <body><script>"use strict";
 
 (function () {

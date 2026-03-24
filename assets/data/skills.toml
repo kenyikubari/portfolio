@@ -1,0 +1,19 @@
+[[skill]]
+title = "Mechanical Design"
+description = "SolidWorks, GD&T, DFM, mechanism design, structural systems."
+tags = ["SolidWorks", "GD&T", "DFM", "Mechanism Design"]
+
+[[skill]]
+title = "Simulation & Analysis"
+description = "FEA, CFD fundamentals, turbulence research, experimental validation."
+tags = ["FEA", "CFD", "PIV", "Turbulence"]
+
+[[skill]]
+title = "Computational Engineering"
+description = "Rust, Python, data analysis, numerical methods, WASM systems."
+tags = ["Rust", "Python", "WASM", "Numerical Methods"]
+
+[[skill]]
+title = "Manufacturing & Testing"
+description = "Fabrication workflows, rapid prototyping, system validation."
+tags = ["Fabrication", "Prototyping", "Validation"]

@@ -5,6 +5,7 @@ use crate::components::navigation_bar::Navbar;
 use crate::pages::home::Home;
 use crate::pages::about::About;
 use crate::pages::projects::Projects;
+use crate::pages::curriculum_vitae::Cv;
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -15,6 +16,7 @@ pub fn App() -> impl IntoView {
                 <Routes fallback=|| view! { <Home /> }>
                     <Route path=path!("/") view=Home />
                     <Route path=path!("/about") view=About />
+                    <Route path=path!("/cv") view=Cv />
                     <Route path=path!("/projects") view=Projects />
                 </Routes>
             </main>

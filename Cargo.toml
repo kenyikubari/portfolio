@@ -8,6 +8,7 @@ console_error_panic_hook = "0.1.7"
 leptos = { version = "0.8", features = ["csr"] }
 leptos_router = "0.8.12"
 serde = {version = "1.0.228", features = ["derive"]}
+toml = "1.1.0"
 # leptos-router = "0.8"
 # web-sys = "0.3"
 # wasm-bindgen = "0.2"

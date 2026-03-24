@@ -235,6 +235,45 @@ body {
   line-height: 1.65;
 }
 
+/* Tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+}
+
+.skill-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  letter-spacing: 0.04em;
+}
+
+
+.btn-ghost {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
 /* ─── Projects section ───────────────────────────────────────────── */
 .featured-projects,
 .projects-section {
@@ -395,6 +434,277 @@ body {
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* ─── Socials ─────────────────────────────────────────────────────── */
+
+.hero-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+
+/* ─── Curriculum Vitae ─────────────────────────────────────────────── */
+.cv-page {
+  background: var(--bg);
+  color: var(--text-primary);
+  padding: 4rem 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(circle, #161b2e 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-attachment: fixed;
+}
+
+
+
+
+/* HEADER  */
+.cv-header {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.cv-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    opacity: 0.8;
+    margin-bottom: 0.6rem;
+}
+
+.cv-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+
+.cv-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.cv-subtitle {
+  color: var(--text-secondary);
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.cv-download {
+  display: inline-block;
+  margin-top: 1.75rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  transition: all 0.2s;
+}
+
+.cv-download:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
+
+/*  BODY  */
+.cv-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*  SECTION  */
+.cv-section {
+  margin-bottom: 3.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.cv-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.cv-section-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+/*  ENTRY  */
+.cv-entry {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  transition: all 0.25s var(--ease-out);
+}
+
+.cv-entry:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px var(--border-accent);
+  transform: translateY(-3px);
+}
+
+.cv-entry::before {
+  content: "";
+  position: absolute;
+  left: -1.35rem;
+  top: 1.6rem;
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.cv-entry-compact {
+  padding: 1rem 1.2rem;
+}
+
+/* Header layout */
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Left */
+.cv-entry-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.cv-entry-sub {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.cv-entry-minor {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Right */
+.cv-entry-meta {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.cv-location {
+  display: block;
+}
+
+.cv-date {
+  display: block;
+}
+
+/*  BULLETS  */
+.cv-bullets {
+  margin-top: 1rem;
+  padding-left: 1.1rem;
+}
+
+.cv-bullets li {
+  margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/*  TAGS  */
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.cv-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--border-accent);
+  letter-spacing: 0.04em;
+}
+
+/* Labels */
+.cv-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+}
+
+/* ===== BOTTOM GRID ===== */
+.cv-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== ANIMATION ===== */
+.cv-entry {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.cv-entry:nth-child(2) { animation-delay: 0.05s; }
+.cv-entry:nth-child(3) { animation-delay: 0.1s; }
+.cv-entry:nth-child(4) { animation-delay: 0.15s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 /* ─── Footer ─────────────────────────────────────────────────────── */
 footer {

@@ -15,7 +15,7 @@ struct ProjectsFile {
 }
 
 pub fn get_projects() -> Vec<Project> {
-    let toml_str = include_str!("../../assets/projects.toml");
+    let toml_str = include_str!("../../assets/data/projects.toml");
     let file: ProjectsFile = toml::from_str(toml_str).expect("Failed to parse projects.toml");
     file.project
 }
