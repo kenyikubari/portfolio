@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Build and Launch Site",
+    "command": "./scripts/dev.ps1",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "reveal_target": "dock",
+    "hide": "never",
+    "shell": {
+      "program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+    },
+    "show_summary": true,
+    "show_command": true
+  }
+]
