@@ -19,7 +19,7 @@ struct ContactFile {
 }
 
 pub fn get_contact() -> Contact {
-    let toml_str = include_str!("../../assets/data/contact.toml");
+    let toml_str = include_str!(concat!(env!("CARGO_MANIFEST_DIR"), "/assets/data/contact.toml"));
     let file: ContactFile = toml::from_str(toml_str).expect("Failed to parse contact.toml");
     file.contact.into_iter().next().expect("No contact entry found")
 }

@@ -1,15 +1,6 @@
 use leptos::prelude::*;
 use crate::data::skills::Skill;
 
-fn get_initials(title: &str) -> String {
-    title
-        .split_whitespace()
-        .filter_map(|w| w.chars().next())
-        .take(2)
-        .collect::<String>()
-        .to_uppercase()
-}
-
 #[component]
 pub fn SkillCard(skill: Skill) -> impl IntoView {
     view! {
