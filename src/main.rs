@@ -1,12 +1,12 @@
-use leptos::*;
+mod app;
+mod components;
+mod pages;
+mod data;
+
+use app::App;
+use leptos::prelude::*;
 
 fn main() {
-    mount_to_body(|| view! { <App/> })
-}
-
-#[component]
-fn App() -> impl IntoView {
-    view! {
-        <h1>"Kenyi Kubari — Mechanical Engineer"</h1>
-    }
+    console_error_panic_hook::set_once();
+    mount_to_body(App);
 }

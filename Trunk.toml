@@ -1,0 +1,8 @@
+[build]
+public_url = "/portfolio/"
+release = true
+target = "index.html"
+
+[serve]
+port = 8080
+open = false
