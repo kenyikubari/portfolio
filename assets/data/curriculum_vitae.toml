@@ -1,0 +1,284 @@
+[education]
+[[education.entry]]
+institution = "University of Manitoba"
+degree = "BSc Mechanical Engineering"
+location = "Winnipeg, MB"
+start = "2021-09"
+end = "2026-04"
+concentrations = ["Solid Mechanics", "Thermo-Fluids"]
+minor = "Computer Science"
+courses = [
+    "Computational Fluid Dynamics",
+    "Finite Element Analysis",
+    "Object-Oriented Programming",
+    "Fluid Mechanics",
+    "Numerical Methods",
+    "Mechanics of Materials",
+    "Aerodynamics",
+    "Engineering Mathematical Analysis",
+    "Computer Aided Design",
+]
+awards = [
+    "Dean's List",
+    "UMSU Bursary (2022)",
+    "Price Faculty of Engineering Bursary (2022)",
+    "MSBI Bursary Fund (2023)",
+    "Jinxi Ma Bursary in Engineering (2023)",
+    "Baden-Württemberg Stipend (2024)",
+]
+
+[[work_experience]]
+title = "Research Assistant"
+organization = "University of Manitoba"
+location = "Winnipeg, MB"
+start = "2023-04"
+end = "2025-10"
+bullets = [
+    "Characterized temperature-dependent diffusion coefficients during controlled heat treatment of metallic systems.",
+    "Fabricated metallurgical samples using electrical discharge machining, grinding, and precision polishing.",
+    "Analyzed diffusion behavior using SEM and EDS imaging with MATLAB and Python data processing.",
+]
+
+[[work_experience]]
+title = "Research Assistant"
+organization = "Ravensburg-Weingarten University of Applied Sciences"
+location = "Weingarten, Germany"
+start = "2024-05"
+end = "2024-08"
+bullets = [
+    "Modeled transient temperature distribution in LiFePO₄ battery cells using C++ finite element methods.",
+    "Conducted analytical computations by isolating individual dimensions and superimposing results.",
+    "Evaluated battery performance using Python data visualization and comparison with experimental results.",
+]
+
+[[work_experience]]
+title = "Powertrain Lead"
+organization = "UMSAE Formula Electric"
+location = "Winnipeg, MB"
+start = "2021-09"
+end = "2025-09"
+bullets = [
+    "Integrated electric powertrain system, optimizing motor placement and structural mounting.",
+    "Improved vehicle efficiency through enhanced power transfer mechanisms from motor to wheels.",
+    "Led thermal management, as well as the mechanical designs for power generation and transmission of the car.",
+]
+
+[[work_experience]]
+title = "Data Student"
+organization = "City of Brandon"
+location = "Brandon, MB"
+start = "2022-04"
+end = "2022-09"
+bullets = [
+    "Developed asset categorization framework for water treatment infrastructure in the Llumin CMMS platform.",
+    "Gained practical experience with PLC systems and municipal water treatment operations.",
+]
+
+[[work_experience]]
+title = "Frosh Representative"
+organization = "University of Manitoba Engineering Society"
+location = "Winnipeg, MB"
+start = "2021-09"
+end = "2022-05"
+bullets = [
+    "Chaired First-Year Committee meetings and organized events for engineering students.",
+]
+
+[[work_experience]]
+title = "Sales Consultant"
+organization = "Moore's Suits for Men"
+location = "Brandon, MB"
+start = "2021-04"
+end = "2022-09"
+bullets = [
+    "Responsible for suit sales, fittings, and consultations.",
+    "Greeted customers, responded to concerns, and improved engagement with merchandise.",
+]
+
+[[work_experience]]
+title = "Private Basketball Trainer"
+organization = "Self-Employed"
+location = "Brandon, MB"
+start = "2021-04"
+end = "2022-09"
+bullets = [
+    "Trained youth athletes aged 12–15 in fundamental basketball skills.",
+    "Developed programs covering passing, shooting, and dribbling techniques.",
+]
+
+[[volunteer_experience]]
+title = "Volunteer Coordinator"
+organization = "Canadian Materials Science Conference"
+location = "Winnipeg, MB"
+date = "2023-07"
+
+[[volunteer_experience]]
+title = "Presenter"
+organization = "Aerospace & Aviation in Manitoba Day"
+location = "Winnipeg, MB"
+date = "2023-05"
+
+[[volunteer_experience]]
+title = "Youth Representative"
+organization = "ESSCA Canada"
+location = "Winnipeg, MB"
+start = "2024-09"
+end = ""
+
+[[volunteer_experience]]
+title = "Event Safety"
+organization = "Winnipeg Jazz Festival"
+location = "Winnipeg, MB"
+date = "2023-06"
+
+[[volunteer_experience]]
+title = "Hospitality"
+organization = "Brandon Jazz Festival"
+location = "Brandon, MB"
+start = "2018"
+end = "2020"
+
+[[membership]]
+role = "Member"
+organization = "Society of Automotive Engineers"
+abbreviation = "SAE"
+start = "2022"
+
+[[membership]]
+role = "Student Member"
+organization = "Engineering and Geoscientist Manitoba"
+abbreviation = "EGM"
+start = "2022"
+
+[[membership]]
+role = "Student Member"
+organization = "Canadian Society of Mechanical Engineering"
+abbreviation = "CSME"
+start = "2023"
+
+[[membership]]
+role = "Member"
+organization = "ESSCA Canada"
+start = "2023"
+
+[[athletics]]
+team = "Team Manitoba Basketball"
+location = "Winnipeg, MB"
+role = "Team Member"
+start = "2019-04"
+end = "2019-08"
+achievements = [
+    "Western Canada Games Bronze Medal",
+    "Provincial Team Captain",
+]
+
+[[athletics]]
+team = "Team Manitoba Track and Field"
+location = "Winnipeg, MB"
+role = "High-Jumper"
+start = "2019-04"
+end = "2019-08"
+achievements = [
+    "Western Canada Games Participant",
+    "Athletics Manitoba Championship Silver Medal",
+]
+
+[[athletics]]
+team = "Varsity Basketball"
+location = "Brandon, MB"
+role = "Team Member"
+start = "2019-11"
+end = "2021-04"
+achievements = [
+    "Winnipeg Sun Top 10 Basketball Player",
+    "3x City Champion",
+]
+
+[[athletics]]
+team = "Varsity Track and Field"
+location = "Brandon, MB"
+role = "Team Member"
+start = "2019-09"
+end = "2021-05"
+achievements = [
+    "Outdoor Track Provincial Champion",
+    "Indoor Track Provincial Bronze",
+    "City all-time high jump record holder",
+]
+
+[[athletics]]
+team = "Other Varsity Sports"
+location = "Brandon, MB"
+role = "Team Member"
+start = "2019-09"
+end = "2021-05"
+achievements = [
+    "Football – Wide Receiver",
+    "Volleyball – Right Side Hitter",
+]
+
+[[extracurricular]]
+title = "Saxophonist"
+organization = "Senior Concert Band"
+location = "Brandon, MB"
+start = "2018-09"
+end = "2021-05"
+achievements = [
+    "Performed at the Rocky Mountain Music Festival",
+]
+
+[[extracurricular]]
+title = "Guitarist"
+organization = "Senior Jazz Band"
+location = "Brandon, MB"
+start = "2018-09"
+end = "2021-05"
+achievements = [
+    "Participated in the Winnipeg Jazz Orchestra Clinic",
+    "Performed in the Brandon Jazz Festival",
+]
+
+[[extracurricular]]
+title = "Cadet"
+organization = "Royal Canadian Army Cadets"
+location = "Winnipeg/Brandon, MB"
+start = "2015-09"
+end = "2019-05"
+achievements = [
+    "Manitoba Army Cadet Challenge Participant",
+    "Drill and Ceremonial Instructor",
+    "Basic Marksman Course Certified",
+]
+
+[[language]]
+name = "English"
+level = "Fluent"
+
+[[language]]
+name = "French"
+level = "Intermediate"
+
+[[language]]
+name = "Arabic-Juba"
+level = "Intermediate"
+
+[[interest]]
+name = "Basketball"
+
+[[interest]]
+name = "Volleyball"
+
+[[interest]]
+name = "Football"
+
+[[interest]]
+name = "Sneakers"
+
+[[interest]]
+name = "Men's Fashion"
+
+[[interest]]
+name = "Chess"
+
+[[interest]]
+name = "Real Estate"
