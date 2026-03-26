@@ -94,4 +94,8 @@ pub struct CvData {
 pub fn get_cv() -> CvData {
     let toml_str = include_str!("../../assets/data/curriculum_vitae.toml");
     toml::from_str(toml_str).expect("Failed to parse cv.toml")
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b082272705f38c8d61ae245ad3e1a4006ea1226c
